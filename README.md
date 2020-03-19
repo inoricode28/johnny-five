@@ -1,2 +1,3 @@
-# johnny-five
-Robotica con JavaScript
+# Robotica con JavaScript
+
+![alt](./img/logo.jpg)
