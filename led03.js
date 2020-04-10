@@ -11,18 +11,18 @@ let sp = new VirtualSerialPort({
 });
 
 let io = new firmata.Board(sp);
-io.once('ready', function(){
+io.once('ready', ()=>{
 	console.log('IO Ready');
 	io.isReady = true;
 	myboard = new Board({io:io, repl:true});
-	myboard.on('ready',function(){
+	myboard.on('ready',()=>{
 		console.log('five ready');
 		myleds = new Leds([13,12,11,10,9,8,7,6]);
 		myrelays = new Relays([5,4,3,2]);
 		
 		keypress(process.stdin);
     	process.stdin.setEncoding('utf8');
-    	process.stdin.on('keypress', function (ch, key){
+    	process.stdin.on('keypress', (ch, key)=>{
       if (!key) { return; }
       switch (key.name){
         case 'q':
