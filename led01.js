@@ -11,7 +11,7 @@ let sp = new VirtualSerialPort({
 });
 
 let io = new firmata.Board(sp);
-io.once('ready', function(){
+io.once('ready', ()=>{
 	console.log('IO Ready');
 	io.isReady = true;
 	myboard = new Board({io:io, repl:true});

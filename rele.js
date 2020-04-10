@@ -5,7 +5,7 @@ let keypress = require('keypress');
 const {Led, Board} = require('johnny-five');
 let myled, myboard;
 let sp = new VirtualSerialPort({
-  host :  '192.168.0.27',
+  host :  '192.168.0.27', //La direccion ip cambia
   type : 'udp4',
   port : 1025
 });
