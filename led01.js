@@ -15,7 +15,7 @@ io.once('ready', ()=>{
 	console.log('IO Ready');
 	io.isReady = true;
 	myboard = new Board({io:io, repl:true});
-	myboard.on('ready',function(){
+	myboard.on('ready',()=>{
 		console.log('five ready');
 		myleds = new Leds([13,12,11,10,9,8,7,6]);
 		myleds.blink(1000);
