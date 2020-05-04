@@ -13,7 +13,7 @@ let io = new firmata.Board(sp);
 io.once('ready', ()=>{
 	console.log('IO Ready');
 	io.isReady = true;
-	console.log(//Me permite ver la firmware con la que trabaja el arduino
+	console.log(//Me permite ver el firmware con la que trabaja el arduino
 		io.firmware.name + " - " +
 		io.firmware.version.major + "." +
 		io.firmware.version.minor
