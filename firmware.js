@@ -23,5 +23,10 @@ io.once('ready', ()=>{
 		console.log('Johnny-Five Listo!!!');
 		myled = new Led(13);
 		myled.blink(1000);
+
+		myboard.repl.inject({
+			led: myled
+		  });
+
 	});
 });
