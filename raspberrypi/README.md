@@ -1,2 +1,2 @@
 # Johnny-Five
-Robotica con Raspebbry pi y JavaScript con la libreria Raspi-io
+Robotica con Raspebbry pi y JavaScript usando la libreria Raspi-io
