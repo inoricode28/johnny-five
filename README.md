@@ -1,2 +1,2 @@
-# Fohnny-Five
+# Johnny-Five
 Robotica con JavaScript
