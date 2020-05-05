@@ -1,0 +1,24 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "esp8266": "node ./esp8266.js",
+    "reset_uno": "firmata-party uno --debug",
+     "reset_mega": "firmata-party mega --debug",
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cylon": "^1.3.0",
+    "debug": "^4.1.1",
+    "etherport-client": "^0.1.4",
+    "firmata": "^2.2.0",
+    "firmata-party": "^2.0.0",
+    "johnny-five": "^1.4.0",
+    "keypress": "^0.2.1",
+    "udp-serial": "^0.2.0"
+  }
+}
