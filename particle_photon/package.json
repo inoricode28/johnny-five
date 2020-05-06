@@ -1,0 +1,16 @@
+{
+  "name": "photon",
+  "version": "1.0.0",
+  "description": "johnny-five con particle photon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "alfonzo",
+  "license": "ISC",
+  "dependencies": {
+    "johnny-five": "^1.4.0",
+    "particle-api-js": "^8.4.0",
+    "particle-io": "^0.15.0"
+  }
+}
