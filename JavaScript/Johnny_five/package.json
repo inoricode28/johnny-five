@@ -1,0 +1,23 @@
+{
+  "name": "arduino",
+  "version": "1.0.0",
+  "description": "robotica",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "reset_nano": "firmata-party nano --debug"
+  },
+  "author": "jeremy",
+  "license": "ISC",
+  "dependencies": {
+    "cylon": "^1.3.0",
+    "debug": "^4.3.3",
+    "etherport-client": "^0.1.4",
+    "firmata": "^2.3.0",
+    "firmata-party": "^2.0.0",
+    "johnny-five": "^2.1.0",
+    "keypress": "^0.2.1",
+    "serialport": "^9.2.8",
+    "udp-serial": "^0.2.0"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "led_nodo_incompleto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "led01.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "johnny-five": "^2.1.0",
+    "socket.io": "^4.4.1"
+  }
+}
