@@ -1,0 +1,6 @@
+Necesitas las dependencias, asi que lo instalas con:
+
+npm install electron johnny-five serialport express socket.io electron-reload promise-mysql socket.io-client
+
+para iniciart el proyecto necesitas:
+npm start
