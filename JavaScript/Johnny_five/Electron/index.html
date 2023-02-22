@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Button Example</title>
+  </head>
+  <body>
+    <button id="toggle-button">Toggle LED</button>
+    <script>
+      const { ipcRenderer } = require('electron')
+
+      const button = document.querySelector('#toggle-button')
+      button.addEventListener('click', () => {
+        ipcRenderer.send('toggle-led')
+      })
+
+      ipcRenderer.on('led-status', (event, isOn) => {
+        button.innerText = isOn ? 'Turn off LED' : 'Turn on LED'
+      })
+    </script>
+  </body>
+</html>
